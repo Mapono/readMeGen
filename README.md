@@ -1,21 +1,23 @@
 # readMeGen
 
-
 ## Description
 
 This is a simple command line application used to generatereadme files.
+Please see the following video link below:
+
+<a href="https://watch.screencastify.com/v/QxjrI65Ws49lA39i0kcO">Demo Video</a>
 
 ## Table of Contents
-* [Installation](#installation)
 
-* [Tests](#tests)
+- [Installation](#installation)
 
-* [Usage](#usage)
+- [Tests](#tests)
 
+- [Usage](#usage)
 
-* [Questions](#questions)
+- [Questions](#questions)
 
-* [Contributing](#contributing)
+- [Contributing](#contributing)
 
 ## Installation
 
@@ -37,8 +39,6 @@ N/A
 
 This repo was created to complete a bootcamp assingment and is not intended for public use.
 
-
-
 ## Contributing
 
 This repo was created to complete a bootcamp assingment and is not intended for public use.
@@ -46,4 +46,3 @@ This repo was created to complete a bootcamp assingment and is not intended for 
 ## Questions
 
 If you have any questions about the repo, open an issue or contact me directly at MaponoGitHub@gmail.com. You can find more of my work at [Mapono](https://github.com/Mapono/).
-  
