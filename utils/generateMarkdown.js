@@ -23,65 +23,64 @@ function renderLicenseSection(license) {
     return `## License
     This project is licensed under the${license} license.`;
   }
-  return ";";
+  return "";
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-  ## Description
-  
-  ${data.description}
+## Description
 
-  ## Table of Contents
-  * [Installation](#installation)
+${data.description}
 
-  *[Usage](#usage)
-  ${renderLicenseLink(data.license)}
-  *[Contriguiting](#contributing)
+## Table of Contents
+* [Installation](#installation)
 
-  *[Contributing](#contributing)
+* [Tests](#tests)
 
-  * [Tests](#tests)
+* [Usage](#usage)
+${renderLicenseLink(data.license)}
 
-  * [Questions](#questions)
+* [Questions](#questions)
 
-  ## Installation
+* [Contributing](#contributing)
 
-  To install necessary dependencies, run the following command:
+## Installation
 
-  \`\`\`
-  ${data.installation}
-  \`\`\`
+To install necessary dependencies, run the following command:
 
-  ##Usage
+\`\`\`
+${data.installation}
+\`\`\`
 
-  ${data.usage}
+## Tests
 
-  ${renderLicenseSection(data.license)}
+To run tests, run the following command:
 
-  ## Contributing
+\`\`\`
+${data.test}
+\`\`\`
 
-  ${data.contributing}
+## Usage
 
-  ## Tests
+${data.usage}
 
-  To run tests, run the following command:
+${renderLicenseSection(data.license)}
 
-  \`\`\`
-  ${data.test}
-  \`\`\`
+## Contributing
 
-  ## Questions
+${data.contributing}
 
-  If you have any questions about the repo, open an issue or contact me directly at ${
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at ${
     data.email
-  }. You can find more of my work at [${data.github.com}](https://github.com/${
+  }. You can find more of my work at [${data.github}](https://github.com/${
     data.github
   }/).
-
+  
 `;
 }
 
