@@ -9,17 +9,18 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "What is your project's name?",
+    message: "Please enter your project's name?",
   },
   {
     type: "input",
     name: "description",
-    message: "Please write a short description of your project",
+    message: "Please providea a short description of your project",
   },
   {
     type: "input",
     name: "usage",
-    message: "What does the user need to know about using the repo?",
+    message:
+      "What additional information will users need to know about using this repo?",
   },
   {
     type: "input",
@@ -30,29 +31,30 @@ const questions = [
   {
     type: "input",
     name: "test",
-    message: "What command should be run to run tests?",
+    message:
+      "Please provide the command to run tests, otherwise 'npm test' will be entered as the default.",
     default: "npm test",
   },
   {
     type: "list",
     name: "license",
-    message: "What kind of license should your project have?",
+    message: "Please provide the licence type of your project.",
     choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
   },
   {
     type: "input",
     name: "github",
-    message: "What is your GitHub username?",
+    message: "Please enter your GitHub username",
   },
   {
     type: "input",
     name: "email",
-    message: "What is your email address?",
+    message: "Please enter your email address",
   },
   {
     type: "input",
     name: "contributing",
-    message: "What does the user need to know about contributing to the repo?",
+    message: "How may other users contribute to your repo?",
   },
 ];
 
@@ -64,7 +66,6 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((inquirerResponses) => {
-    console.log("generateing README...");
     writeToFile("README.md", generateMarkdown({ ...inquirerResponses }));
   });
 }
